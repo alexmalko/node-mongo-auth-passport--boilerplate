@@ -1,0 +1,4 @@
+node_modules/
+
+#Delete before pushing to Heroku
+.env
