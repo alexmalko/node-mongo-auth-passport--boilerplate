@@ -29,7 +29,7 @@ app.use(express.json());
 // Sessions
 app.use(
 	session({
-		secret: 'keyboard cat',
+		secret: 'hello word',
 		resave: false,
 		saveUninitialized: false
 	})
@@ -42,7 +42,11 @@ app.use(passport.session());
 app.use('/api/posts', posts);
 app.use('/api/login', auth);
 app.use('/api/users', users);
-app.use('/auth', require('./routes/auth'));
+app.use('/auth', require('./routes/auth')); // google auth
+
+app.get('/', function(req, res) {
+	res.send('hello');
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

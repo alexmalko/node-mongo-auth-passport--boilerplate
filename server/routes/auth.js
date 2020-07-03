@@ -20,3 +20,5 @@ router.get('/logout', (req, res) => {
 });
 
 module.exports = router;
+
+// http://localhost:5000/auth/google

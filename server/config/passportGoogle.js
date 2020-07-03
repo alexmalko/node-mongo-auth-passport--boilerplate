@@ -1,3 +1,4 @@
+const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const Gauth = require('../models/Gauth');
 
@@ -39,6 +40,6 @@ module.exports = function(passport) {
 	});
 
 	passport.deserializeUser((id, done) => {
-		User.findById(id, (err, user) => done(err, user));
+		Gauth.findById(id, (err, user) => done(err, user));
 	});
 };

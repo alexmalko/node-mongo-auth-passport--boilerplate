@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import dummy from '../dummy';
+import dashboard from '../dashboard';
 
 export default function Routes() {
 	return (
 		<div>
 			<Switch>
-				<Route exact path="/dummy" component={dummy} />
+				<Route exact path="/dashboard" component={dashboard} />
 			</Switch>
 		</div>
 	);
