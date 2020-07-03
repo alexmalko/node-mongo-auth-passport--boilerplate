@@ -1,1 +1,1 @@
-Node.js + MongoDb (mongoose) + Authentication boilerplate shell
+Node.js + MongoDb (mongoose) + Authentication (passport local & google) boilerplate
